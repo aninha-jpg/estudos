@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body {
+            font: normal 1.5em Arial;
+        }
+        input {
+            width: 200px;
+            height: 100px;
+            font: normal 0.8em Arial;
+        }
+        #res{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Números</h1>
+
+    <input type="button" value="Clique para Calcular" onclick="calcular()">
+    
+    <div id="res">
+        <p>O resultado vem aqui...</p>
+    </div>
+
+    <script>
+        //window.alert("Seja bem-vindo(a) ao meu site!")
+
+        function calcular() {
+            let numero = Number(window.prompt("digite um número:"))
+            
+            let res = window.document.getElementById('res')
+            // o dobro de 2 *2 = 4
+            //  e a metade de 2 / 2 = 1
+
+
+            res.innerHTML = `O dobro de ${numero} é ${numero * 2} e a metade é ${numero / 2}`
+        }
+
+    </script>
+</body>
+</html>

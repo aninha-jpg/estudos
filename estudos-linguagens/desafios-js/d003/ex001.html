@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <style>
+        body {
+            font: normal 1.5em bold;
+            background-color: rgb(238, 214, 232);
+            color: rgb(196, 105, 127);
+        }
+        input {
+            padding: 20px;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(240, 165, 184);
+        }
+        div#resultado {
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando Médias</h1>
+    <input type="button" value="Calcular Média" onclick="calcularMedia()">
+
+    <div id="resultado">
+        O resultado aparece aqui!
+    </div>
+
+    <script>
+        function calcularMedia() {
+            let numeroUm = window.prompt("Escolha um número: ")
+
+            let numeroDois = window.prompt("Escolha outro número: ")
+
+            let n1 = Number(numeroUm)
+
+            let n2 = Number(numeroDois)
+
+            let resultadoMedia = (n1 + n2) / 2
+            let resmedia = Number(resultadoMedia)
+
+            let resultado = window.document.getElementById("resultado")
+            
+            resultado.innerHTML = `A média entre os números são: ${resmedia}`
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+Verificador de Hora, que conforme sua data e hora, ele atualiza dinamicamente as imagens. Produzido no curso de JavaScript do curso em video.

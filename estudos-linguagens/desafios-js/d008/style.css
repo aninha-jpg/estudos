@@ -1,0 +1,34 @@
+body {
+    background-color: #BF84D4;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+}
+
+
+#input{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+button{
+    width: 70px;
+    height: 30px;
+    align-items: center;
+    color: black;
+    background-color: #fbfafc;
+}
+
+button:hover{
+    background-color: #BF84D4;
+}

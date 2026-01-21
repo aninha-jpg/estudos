@@ -21,10 +21,9 @@ function adicionar(){
         adicionarNumeros.appendChild(adcNumeros)
         // precisamos adicionar este número no array push(numero)
         listaNumeros.push(numero)
-        // preciso que a lista limpe se caso adicionar um novo número listaNumeros = ""??
     } 
 
-    // depois de adicionar todos os números, ao finalizar chama a função:
+    // depois de adicionar todos os números, clicar em finalizar chama a função:
 
 }
 function finalizar(){

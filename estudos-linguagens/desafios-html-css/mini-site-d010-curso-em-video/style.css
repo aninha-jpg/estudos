@@ -5,11 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: "Poppins";
-    src: url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-}
-
 
 
 body {
@@ -66,26 +61,26 @@ main {
     border: 0;
 }
 
-section#secaoumhistoriamascote > h2.h2principal{
+article#secaoumhistoriamascote > h2.h2principal{
     font-size: 2.5em;
     background: white;
     margin: 15px;
 }
-section#secaoumhistoriamascote > h2 {
+article#secaoumhistoriamascote > h2 {
     font-family: "Idroid", sans-serif;
     background: linear-gradient(to left, white, #A0EABF);
     color: #116333;
     margin: 20px;
 }
 
-section#secaoumhistoriamascote > p {
+article#secaoumhistoriamascote > p {
     text-indent: 20px;
     text-align: justify;
     justify-content: center;
     margin: 20px;
 }
 
-section#secaoumhistoriamascote .linkestilizado{
+article#secaoumhistoriamascote .linkestilizado{
     text-decoration: none; 
     font-weight: bold;
     font-size: 18px;
@@ -93,14 +88,14 @@ section#secaoumhistoriamascote .linkestilizado{
     color: #116333;
 }
 
-section#secaoumhistoriamascote .imgdandroids{
+article#secaoumhistoriamascote .imgdandroids{
     display: block;
     margin: auto;
     border: 20px;
     padding: 20px;
 }
 
-section#extra{
+article#extra{
     background-color: #80E2AA;
     border-radius: 15px;
     margin: 10px;
@@ -109,14 +104,14 @@ section#extra{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-section#extra > h3 {
+article#extra > h3 {
     background-color: #175C33;
     color: white;
     padding: 15px;
     border-radius: 15px 15px 0 0;
 }
 
-section#extra > ul{
+article#extra > ul{
     columns: 2;
 }
 

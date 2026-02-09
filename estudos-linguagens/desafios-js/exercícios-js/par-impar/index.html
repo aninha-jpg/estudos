@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar?</title>
+    <style>
+        body {
+            background-color: rgba(99, 18, 126, 0.397);
+            font-size: 20px;
+            margin: 10px;
+        }
+        header > h1 {
+            background-color: rgba(137, 43, 226, 0.682);
+            border-radius: 5px;
+            color: aliceblue;
+            box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.241);
+        }
+        main {
+            padding: 10px;
+        }
+        main > input {
+            background-color: rgba(124, 45, 198, 0.393);
+            width: 300px;
+            height: 50px;
+            border: 1px solid rgb(154, 62, 215);
+            box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.241);
+            font-size: 20px;
+            color: aliceblue;
+        }
+        main > button {
+            background-color: rgba(124, 45, 198, 0.393);
+            border: 1px solid rgb(154, 62, 215);
+            width: 100px;
+            height: 50px;
+            box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.241);
+            font-size: 15px;
+            color: aliceblue;
+        }
+
+        main > button:hover {
+            background-color: rgba(124, 45, 198, 0.765);
+        }
+
+        main > section {
+            color: aliceblue;
+            background-color: rgba(137, 43, 226, 0.682);
+            border-radius: 10px;
+            width: 200px;
+            margin: 10px;
+            padding: 10px;
+            box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.241);
+            font-size: 24px;
+        }
+
+        footer {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.139);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Descubra se o número é Par ou Ímpar:</h1>
+    </header>
+    <main>
+        <input type="number" name="parouimpar" id="parouimpar">
+        
+        <button value="submit" onclick="descobrir()">Descobrir</button>
+
+        <section class="resultado">
+            Aqui aparecerá o resultado.
+        </section>
+    </main>
+    <footer>
+        Criado por Ana Luiza.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

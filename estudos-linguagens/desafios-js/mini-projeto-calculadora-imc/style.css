@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #29EF58;
+    --cor2: #42C561;
+    --cor3: #4E9B60;
+    --cor4: #4B7054;
+    --cor5: #3A463D;
+    --cor6: #29332B;
+}
+
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: var(--cor5);
+    color: white;
+}
+
+header {
+    background-color: var(--cor1);
+}
+
+header > h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    color: #29332B;
+    font-size: 24px;
+    max-width: 380px;
+    margin: 10px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    background-color: var(--cor1);
+    border: none;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: black;
+}
+
+button {
+    background-color: var(--cor1);
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--cor4);
+    transition: 1s;
+}
+
+
+footer {
+    background-color: var(--cor1);
+    text-align: center;
+}

@@ -1,5 +1,3 @@
-# livro: entendendo algoritmos.
-
 def pesquisa_binaria(lista, item): 
     # inicializa as variveis da lista/chutes
     baixo = 0

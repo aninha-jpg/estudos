@@ -3,7 +3,7 @@ function verificar(){
     let ano = data.getFullYear()
     let formAno = document.getElementById("txtano")
     let res = document.getElementById('res')
-    if(formAno.value.lenght == 0 || formAno.value > ano) {
+    if(formAno.value.length == 0 || formAno.value > ano) {
         window.alert("[ERRO] Verifique os dados e tente novamente!")
     } else {
       let fsex = document.getElementsByName('radsex')

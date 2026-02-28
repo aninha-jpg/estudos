@@ -8,7 +8,7 @@ async function search(){
     try {
 
         // passando a url da api geocoding.
-        const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city.value},${state.value},${country.value}&appid=`);
+        const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city.value},${state.value},${country.value}&appid={YOUR_API_KEY_HERE}`);
 
         const data = await response.json();
         // se a resposta da api for igual a 200(ok) e a lista for maior que 0, ele roda a api, se não cai do else e mostra o erro na tela.
@@ -17,7 +17,7 @@ async function search(){
             let latitude = data[0].lat;
             let longitude = data[0].lon;
             // inicio api weather
-            const responseweather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=&units=metric&lang=pt_br`);
+            const responseweather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid={YOUR_API_KEY_HERE}&units=metric&lang=pt_br`);
 
 
             const dataweather = await responseweather.json();

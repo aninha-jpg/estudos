@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clima Hoje</h1>
+    </header>
+    <main>
+        <label for="city"><p>Digite sua Cidade:</p><input type="text" name="city" id="city"></label>
+        <label for="state"><p>Digite seu Estado:</p><input type="text" name="state" id="state"></label>
+        <label for="country"><p>Digite seu País:</p><input type="text" name="country" id="country"></label>
+        <button type="submit" onclick="search()">Pesquisar</button>
+        <div id="result">
+        </div>
+    </main>
+    <footer>
+        <p>Criado por Ana Luiza.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

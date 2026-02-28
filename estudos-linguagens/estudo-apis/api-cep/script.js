@@ -25,6 +25,7 @@ async function foundCEP() {
             <p>Cidade:  ${data.localidade} </p>
             <p>Bairro: ${data.bairro} </p>
             <p>Logradouro: ${data.logradouro} </p>
+            <p>Estado: ${data.estado}</p>
             `;
         }
     // se caso houver algum erro na api

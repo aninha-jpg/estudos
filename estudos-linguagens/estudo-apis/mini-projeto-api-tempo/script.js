@@ -17,19 +17,23 @@ async function search(){
             let latitude = data[0].lat;
             let longitude = data[0].lon;
             // inicio api weather
-            const responseweather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=`);
+            const responseweather = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=&units=metric&lang=pt_br`);
 
 
             const dataweather = await responseweather.json();
 
-            result.innerHTML = `<p> A Temperatura em ${city.value} é de: ${dataweather.main.temp}°.</p>
+            result.innerHTML = `<p> A Temperatura em ${city.value} é de: ${Math.round(dataweather.main.temp)}°.</p>
             <br>
             <p> No momento está: ${dataweather.weather[0].description}. <img src="https://openweathermap.org/img/wn/${dataweather.weather[0].icon}@2x.png"></p>
             <br>
-            <p> A temperatura máxima pode chegar a: ${dataweather.main.temp_max}°.</p>
+            <p> A temperatura máxima pode chegar a: ${Math.round(dataweather.main.temp_max)}°.</p>
             <br>
-            <p> E a Temperatura mínima: ${dataweather.main.temp_min}°.</p>
+            <p> E a Temperatura mínima: ${Math.round(dataweather.main.temp_min)}°.</p>
             `;
+
+            city.value = "";
+            state.value = "";
+            country.value = "";
         } else {
             result.innerHTML = `Cidade não encontrada. Por favor, verifique as informações.`
         }

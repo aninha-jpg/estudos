@@ -1,0 +1,14 @@
+:root {
+
+    --cor1: #F5BBD1;
+    --cor2: #FBA6C7;
+    --cor3: #FFDCEA;
+    --cor4: #854A5F;
+    --cor5: #FFA7C8;
+}
+
+
+.calculator_keys {
+    display: grid;
+    width: 250px;
+}

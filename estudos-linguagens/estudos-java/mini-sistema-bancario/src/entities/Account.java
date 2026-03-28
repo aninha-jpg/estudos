@@ -45,4 +45,13 @@ public class Account {
         this.value -= (value + tax());
     }
 
+    public String toString(){
+        return "✿ Account: "
+        + numberAccount
+        + ", ✿ Holder: "
+        + name
+        + ", ✿ Balance: $ "
+        + String.format("%.2f%n", value);
+    }
+
 }

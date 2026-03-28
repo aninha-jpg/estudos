@@ -18,7 +18,7 @@ Para sair do fluxo básico, adicionei funcionalidades que tornam o sistema mais 
 
 * **Linguagem:** Java 17+
 
-* **Paradigma:** Orientação a Objetos (Classes, Métodos, Encapsulamento).
+* **Paradigma:** Orientação a Objetos (Classes, Métodos, Encapsulamento, `toString`).
 
 * **Ambiente:** Linux (Ubuntu) / Vs Code.
 

@@ -34,13 +34,13 @@ public class Program {
         System.out.println("      Account Data");
         System.out.println("╰── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──╯");
 
-        System.out.printf("✿ Account %s%n✿ Holder: %s%n✿ Balance: %.2f%n", account.getNumberAccount(), account.getName(), account.getValue());
+        System.out.print(account);
 
         int choice = 0;
 
         while (choice != 3){
             System.out.println("⋅ ⋅ ── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ── ⋅ ⋅");
-            System.out.println("✿ 1. Make a deposit \n ✿ 2. Withdraw Money \n ✿ 3. End \n");
+            System.out.println("✿ 1. Make a deposit \n✿ 2. Withdraw Money \n✿ 3. End \n");
             choice = sc.nextInt();
 
             if(choice == 1){
@@ -53,7 +53,7 @@ public class Program {
                 System.out.println("   Update Account Data");
                 System.out.println("╰── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──╯");
 
-                System.out.printf("✿ Account %s%n✿ Holder: %s%n✿ Balance: %.2f%n", account.getNumberAccount(), account.getName(), account.getValue());
+                System.out.print(account);
 
                 } else {
                     System.out.println("✿ Enter a valid value.");
@@ -70,7 +70,7 @@ public class Program {
                     System.out.println(" Update Account Data");
                     System.out.println("╰── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──╯");
 
-                    System.out.printf("✿ Account %s%n✿ Holder: %s%n✿ Balance: %.2f%n", account.getNumberAccount(), account.getName(), account.getValue());
+                    System.out.print(account);
 
                 } else {
                     System.out.println("✿ Enter a valid value.");

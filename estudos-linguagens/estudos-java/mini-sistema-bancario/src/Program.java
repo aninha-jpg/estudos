@@ -45,10 +45,10 @@ public class Program {
 
             if(choice == 1){
                 System.out.println("✿ Enter a deposit value: ");
-                double value = sc.nextDouble();
+                double initialDeposit = sc.nextDouble();
 
-                if(value > 0){
-                account.addValue(value);
+                if(initialDeposit > 0){
+                account.addValue(initialDeposit);
                 System.out.println("╭── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──╮");
                 System.out.println("   Update Account Data");
                 System.out.println("╰── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──╯");

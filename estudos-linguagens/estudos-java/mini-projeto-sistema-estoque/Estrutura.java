@@ -12,9 +12,7 @@ public class Estrutura {
             String nome = sc.nextLine();
             System.out.print("Preço: ");
             Double preco = sc.nextDouble();
-            System.out.print("Quantidade: ");
-            int quantidade = sc.nextInt();
-            Produto produto = new Produto(nome, preco, quantidade);
+            Produto produto = new Produto(nome, preco);
 
             System.out.println();
             System.out.println("Dados do Produto: " + produto);
@@ -29,7 +27,7 @@ public class Estrutura {
 
                 if (escolha == 1){
                     System.out.println("Entre com o número de produtos para ser adicionado no estoque: ");
-                    quantidade = sc.nextInt();
+                    int quantidade = sc.nextInt();
                     if (quantidade <= 0){
                         System.out.println("Quantidade Inválida. Tente Novamente");
                     } else {
@@ -40,8 +38,8 @@ public class Estrutura {
 
                 } else if (escolha == 2){
                         System.out.println("Entre com o número de produtos para ser removidos do estoque: ");
-                        quantidade = sc.nextInt();
-                    if (quantidade < 0 || quantidade > produto.quantidade){
+                        int quantidade = sc.nextInt();
+                    if (quantidade < 0 || quantidade > produto.getQuantidade()){
                         System.out.println("Quantidade Inválida. Tente Novamente");
                     } else {
                         produto.removeEstoque(quantidade);

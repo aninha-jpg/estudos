@@ -6,10 +6,10 @@ public class Account {
     private final int numberAccount;
     private double value;
 
-    public Account(String name, int numberAccount, double value){
+    public Account(String name, int numberAccount, double initialDeposit){
         this.name = name;
         this.numberAccount = numberAccount;
-        this.value = value;
+        addValue(initialDeposit);
     } 
 
     public Account(String name, int numberAccount){

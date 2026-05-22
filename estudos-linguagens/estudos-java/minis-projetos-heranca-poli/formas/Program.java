@@ -21,7 +21,7 @@ public class Program {
 
             for (int i = 0; i < n; i++) {
                 System.out.print("Rectangle or Circle? (r/c): ");
-                int option = sc.next().toLowerCase().charAt(0);
+                char option = sc.next().toLowerCase().charAt(0);
 
                 System.out.print("Color: (BLACK/BLUE/RED): ");
                 Color color = Color.valueOf(sc.next().toUpperCase());
